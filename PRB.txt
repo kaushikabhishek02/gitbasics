@@ -1,8 +1,6 @@
 Root Cause: 
 Problem: Server dubsapprd01 rebooted unexpectedly. This lead to  all users have no possibility to log into SAP and unable to print.
 
-1.Why did the servers reboot during production hours? 
-Ans:  Server was migrated and restarted on different host.
 
 2.Why server was migrated and restarted?
 Ans: Server restarted due to HA on host dubhp2esx5 in dublin production cluster.
