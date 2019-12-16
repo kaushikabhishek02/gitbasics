@@ -1,0 +1,13 @@
+Root Cause: 
+Problem: Server dubsapprd01 rebooted unexpectedly. This lead to  all users have no possibility to log into SAP and unable to print.
+
+3.Why HA triggered?
+Ans: HA triggered due to host isolation or availability in the cluster and hence host restarted its VMs to other hosts.
+
+4.Why was host isolated or unavailable.
+Ans : This cluster has old esx hosts which are not getting patched and serving on old hardwares. This has caused the issue and hosts have been behaving like this. The only factor which were flagged earlier by the VMware support that we are running on an older version which could be a possible reason.
+
+5. Why are the hosts not getting patched or updated regularly.
+Ans: This is known cause to Stryker and hardwares are yet to be updated and replaced with new hardware. They must be working on the plan to upgrade hardware or firmwares.
+
+Root Cause: hosts running on older hardware version caused the host unavailability that in turn caused HA. Hence VM was restarted to other host.
